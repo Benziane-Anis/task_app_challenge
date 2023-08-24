@@ -1,0 +1,38 @@
+doctype html
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/page.css")
+    body 
+            header
+            nav
+                h1
+                    span.welcom Welcome 
+                    span.user User
+                ul
+                    li
+                        img(src="https://www.pngkit.com/png/full/253-2539674_career-man.png", alt="")
+            
+            main
+                h1.alltodo All ToDos
+                div.tasks
+                    
+                   each item in data
+                    article
+                    - id = item.id
+
+                      div.insidetask
+                        div.insidetask1 
+                                input(type="checkbox", name="")
+                                h2= item.title || "No title"
+                        div.insidetask2 
+                            button(type="submit") Update 
+                            form(action="/delete/" + id, method="POST")
+                            button(type="submit") Delete
+                div.add 
+                    form(action="/add" , method="POST")
+                    input(type="text", name="title", placeholder="add task")
+                    input(type="submit", value="Add")                  

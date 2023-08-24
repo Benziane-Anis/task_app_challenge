@@ -1,0 +1,82 @@
+*{
+list-style: none;
+text-decoration: none;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+nav{
+    width: 100%;
+    min-height:60px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+.welcom{
+    color: orange;
+    font-size: 32px;
+}
+.user{
+    font-size: 32px;
+}
+img{
+    width: 70px;
+    height: 64px;
+    border-radius: 100%;
+    padding-right: 12px;
+}
+.alltodo{
+    text-align: center;
+    
+}
+.insidetask{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    margin-top: 10px;
+    border-radius: 16px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    
+}
+.insidetask1{
+    display: flex;
+    gap: 3;
+    justify-content: space-around;
+
+}
+.insidetask2{
+    display: flex;
+    gap: 3;
+    justify-content: space-around;
+
+}
+.tasks{
+    height: 50vh;
+    overflow: scroll;
+}
+
+button{
+    height: 50px;
+
+}
+.add input{
+    width: 95%;
+    height: 50px;
+
+}
+.add button{
+    margin-left: 8px;
+    height: 50px;
+    background-color: orange;
+    border-color: black;
+}
