@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
         link(rel="stylesheet", href="/page.css")
+        script(src="/script.js") 
     body 
             header
             nav
@@ -26,13 +27,19 @@ html(lang="en")
 
                       div.insidetask
                         div.insidetask1 
-                                input(type="checkbox", name="")
-                                h2= item.title || "No title"
+                                input(type="checkbox", name="" ,id="click")
+                                h2.click1= item.title || "No title"
                         div.insidetask2 
-                            button(type="submit") Update 
+                            a(href="/update/" + id) Update
+                            
                             form(action="/delete/" + id, method="POST")
-                            button(type="submit") Delete
+                              button(type="submit").delete Delete
+                     
+                       
                 div.add 
                     form(action="/add" , method="POST")
-                    input(type="text", name="title", placeholder="add task")
-                    input(type="submit", value="Add")                  
+                      input(type="text", name="title", placeholder="add task")
+                      button(type="submit") Add      
+
+           
+                

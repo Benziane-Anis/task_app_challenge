@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 97vh;
+}
+form{
+    padding:20px 60px; 
+    width: 100%;  
+}
+.input{
+    width: 88%;
+    height: 50px;
+    border-radius: 10px;
+    border:none;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+.btn{
+    background: rgb(81, 81, 255);
+    border: none;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:1px solid aqua;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .btn{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
